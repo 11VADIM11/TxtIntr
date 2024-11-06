@@ -18,7 +18,7 @@ bool is_number(const std::string& str)
     std::istringstream iss(str);
     double d;
     char c;
-    // Исправление: заменить `&&` на `||` для правильной проверки
+  
     if(!(iss >> d) || (iss >> c)) {
         return false;
     }
